@@ -1,0 +1,28 @@
+import random
+computer_no=random.randint(1,20 )
+def sameno(target,number):
+    if target == number :
+        result = "you win your score is" + str(guesstaken) + "also go to oaawz://jshzzyvvt.nvvnsl.jvt/j/VKH3Tqr5UKT3Uqj1/h/VKL2TgLeVAjdUAB4/klahpsz"
+    else:
+        result = "fail"
+    return result
+guess=int(input("guess a number from 1 to 20"))
+vaildnumbers = range(1,20)
+guesstaken = 0
+while guesstaken < 5:
+    if (sameno(computer_no,guess)) == "fail" :
+        if guess < computer_no :
+            print("higher")
+        else:
+            print("lower")
+        guess=int(input("try again"))
+        if guess in vaildnumbers:
+            print(sameno(computer_no,guess))
+            guesstaken = guesstaken + 1
+        else:
+            print("invaild")
+print("you lose the winning number was"+ str(computer_no))
+
+        
+        
+        
